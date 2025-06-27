@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jersey+10&display=swap"); /* colors */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --main-color:#35AFA0;
+  --bg1-color:#FFCD00;
+  --bg2-color:#FFFFFF;
+  --bg3-color:#F5F5F5;
+  --text1-color:#202435;
+  --text2-color:#000000;
+  --text3-color:#707070;
+  --text4-color:#1773B0;
+  --text5-color:#9B9BB4;
+  --text6-color:#595959;
+  --text7-color:#D51243;
+  --text8-color:#71778E;
+/* fonts */
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+  }
+  .Dosis-font {
+    font-family: "Dosis", sans-serif;
+  }
+  .Jersey10 {
+    font-family: "Jersey 10", sans-serif;
+  }
+  .roboto {
+    font-family: "Roboto", sans-serif;
+  }
+
+  /* colors */
+}
+.main-color {
+  color: var(--main-color);
+}
+.bg1-color{
+  background-color: var(--bg1-color);
+}
+
