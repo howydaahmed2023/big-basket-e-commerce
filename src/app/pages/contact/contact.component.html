@@ -1,1 +1,84 @@
-<p>contact works!</p>
+<section class="container text-theme1">
+  <div class="text-center">
+    <div class="col-sm-12 col-md-5 mx-auto">
+      <h1>Get In Touch</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita
+        quaerat unde quam dolor culpa veritatis inventore, aut commodi eum
+        veniam vel.
+      </p>
+    </div>
+  </div>
+</section>
+<section class="container text-theme1">
+  <div class="row mt-4">
+    @for(item of contactBox ;track $index){
+    <div class="col-sm-12 col-md-3 mx-auto text-center py-4 bg-theme4 border">
+      <img [src]="item.icon" [alt]="item.address" class="main-color pb-4" />
+      <h6 class="fw-medium">{{ item.address }}</h6>
+      <p>{{ item.description }}</p>
+    </div>
+
+    }
+  </div>
+</section>
+<section class="container pt-4 px-3">
+  <div class="row pt-5 shadow bg-theme2 border">
+    <div class="col-sm-12 border-bottom text-center pt-3 mb-5">
+      <h1>Send Us</h1>
+      <p>
+        Contact us for all your questions and opinions, or you can solve your
+        problems in a shorter time with our contact offices.
+      </p>
+    </div>
+    <div class="col-sm-12">
+      <form>
+        <div class="mb-3 row">
+          <div class="col">
+            <label for="formControlName">Name</label>
+            <input
+              type="text"
+              class="form-control form-control-lg"
+              id="formControlName"
+              name="name"
+            />
+          </div>
+          <div class="col">
+            <label for="formControlEmail">Email * </label>
+            <input
+              type="text"
+              class="form-control form-control-lg"
+              name="email"
+              id="formcontolEmail"
+            />
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlPhoneNumber" class="form-label"
+            >Phone Number</label
+          >
+          <input
+            type="number"
+            class="form-control form-control-lg"
+            id="exampleFormControlPhoneNumber"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >Your message</label
+          >
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="5"
+          ></textarea>
+        </div>
+        <div>
+          <button class="btn bg-main-color text-theme2 fw-semibold">
+            Send Message
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
