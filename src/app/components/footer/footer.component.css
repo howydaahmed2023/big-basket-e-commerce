@@ -1,0 +1,15 @@
+p,button{
+  font-size: 13px;
+}
+button{
+  padding: 16.25px 20px 17.25px 20px;
+  top:20px;
+  right: 0;
+}
+button::placeholder{
+  font-size: 14px;
+  color:#9595A9;
+}
+button:hover{
+  background-color: var(--main-color);
+}

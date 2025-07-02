@@ -1,0 +1,24 @@
+.nav-categories{
+  border-radius: 50px;
+  font-size: 15px;
+}
+.nav-totalProducts{
+  left:130px;
+  bottom: -14px;
+  font-size: 10px;
+  color: #71778E;
+  background: #EDEEF5;
+  border: 1px solid #FFFFFF;
+  border-radius: 18px;
+
+
+}
+.nav-link{
+  color: #3E445A;
+  font-size: 15px;
+  
+}
+.nav-link:hover,
+.nav-link.active{
+  color:var(--main-color)
+}
