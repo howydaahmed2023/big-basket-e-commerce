@@ -1,4 +1,4 @@
-export interface Products {
+export interface Product {
   sold: number
   images: string[]
   subcategory: Subcategory[]
@@ -17,6 +17,13 @@ export interface Products {
   createdAt: string
   updatedAt: string
   id: string
+}
+export interface Products {
+  products: Product[]
+  total: number
+  limit: number
+  page: number
+  totalPages: number
 }
 
 export interface Subcategory {
