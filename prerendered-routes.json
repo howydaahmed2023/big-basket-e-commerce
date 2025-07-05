@@ -1,0 +1,11 @@
+{
+  "routes": {
+    "/Basket-Ecommerce-Project": {},
+    "/Basket-Ecommerce-Project/about": {},
+    "/Basket-Ecommerce-Project/blog": {},
+    "/Basket-Ecommerce-Project/checkout": {},
+    "/Basket-Ecommerce-Project/contact": {},
+    "/Basket-Ecommerce-Project/home": {},
+    "/Basket-Ecommerce-Project/shop": {}
+  }
+}
