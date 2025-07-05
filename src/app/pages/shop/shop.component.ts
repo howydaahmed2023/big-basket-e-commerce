@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { ServicedataService } from '../../servicedata.service';
 import { CommonModule } from '@angular/common';
+import { ProductsService } from '../../service/products.service';
 
 @Component({
   selector: 'app-shop',
@@ -11,23 +11,22 @@ import { CommonModule } from '@angular/common';
 })
 export class ShopComponent implements OnInit {
 products:any[]=[]
-  constructor( private _service:ServicedataService){
-  }
+  productSrv = inject(ProductsService)
 
-  
+
 ngOnInit(): void {
-  this.getallapi();
+  this.getAllApi();
 }
 
 
 
-getallapi() {
-  this._service.getallproduct().subscribe((res: any) => {
+getAllApi() {
+  this.productSrv.getAllProducts().subscribe((res: any) => {
     this.products = res.data.map((product: any) => ({
       ...product,
-      addtocart: false, 
-      count:0   
-     
+      addtocart: false,
+      count:0
+
     }));
     // console.log(this.products)
 
