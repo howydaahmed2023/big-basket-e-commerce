@@ -1,0 +1,11 @@
+{
+  "routes": {
+    "/big-basket-e-commerce": {},
+    "/big-basket-e-commerce/about": {},
+    "/big-basket-e-commerce/blog": {},
+    "/big-basket-e-commerce/checkout": {},
+    "/big-basket-e-commerce/contact": {},
+    "/big-basket-e-commerce/home": {},
+    "/big-basket-e-commerce/shop": {}
+  }
+}
