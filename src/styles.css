@@ -58,6 +58,9 @@ font-family: "Inter", sans-serif;
 .text-theme1{
   color:var(--text1-color)
 }
+.text-theme5{
+  color: var(--text5-color);
+}
 
 
 

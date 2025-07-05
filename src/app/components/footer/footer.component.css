@@ -1,10 +1,12 @@
 p,button{
   font-size: 13px;
+  letter-spacing: -0.1px;
 }
 button{
   padding: 16.25px 20px 17.25px 20px;
-  top:20px;
+  top:0;
   right: 0;
+z-index: 1;
 }
 button::placeholder{
   font-size: 14px;
@@ -13,3 +15,25 @@ button::placeholder{
 button:hover{
   background-color: var(--main-color);
 }
+h5{
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Dosis", sans-serif;
+  color:var(--text1-color)
+}
+ul li a{
+  font-size: 13px;
+  color:#71778E;
+  text-decoration: none;
+  letter-spacing: -0.1px;
+}
+.footer-icons span{
+  width: 34px;
+  height:34px;
+  border-radius: 17px;
+ border: 1px solid #E4E5EE;
+ padding: 5.75px 9.5px ;
+ justify-content: center;
+  
+}
+
