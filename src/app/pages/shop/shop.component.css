@@ -1,0 +1,179 @@
+
+
+
+/* section 2 */
+ .height2{
+   height: 48vh;
+ }
+ .width{
+  width: 910px;
+  border-radius: 8px;
+ }
+
+ @media (max-width: 767.98px) {
+  .height2 .row {
+    flex-direction: column;
+  }
+
+  .height2 .col-lg-3,
+  .height2 .col-lg-9,
+  .height2 .col-md-4,
+  .height2 .col-md-8 {
+    width: 100% !important;
+  }
+
+  .height2 .bg-theme3 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .height2 .bg-theme3 p {
+    width: 100%;
+  }
+
+  .height2 .bg-theme3 p:last-child {
+    text-align: left;
+    margin-left: 0 !important;
+  }
+}
+
+
+ /* end */
+
+ /* section3 */
+
+ .height{
+  height: 100vh;
+  width: 90%;
+ }
+ .left {
+  /* position: relative;
+  z-index: 1;
+  background-color: white; /* لو اللي فوق شفاف */
+  /* margin-top: 20px;
+  padding-top: 10px;  */
+  margin-left: 90px;
+
+}
+
+ /* .left{
+  margin-left: 90px;
+ } */
+ .font{
+  font-family: Dosis;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+ }
+ .text{
+   font-family: Inter;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 21px;
+   letter-spacing: -0.1px;
+   vertical-align: middle;
+   width: 18.889875411987305;
+   position: relative;
+   height: 21;
+   left: 130px;
+ }
+ .text1{
+   margin-left: 28px;
+ }
+
+ .img1{
+  margin-top: 60px;
+  height: 370px;
+
+ }
+ 
+ .start{
+  margin-left: 10px;
+ }
+ .start2{
+  width: 172px;
+  height: 140px;
+  margin-left: 117px ;
+ 
+ }
+ 
+ .bord{
+  border: none;
+  color: yellow;
+ }
+
+
+
+ .right{
+  margin-left: -30px;
+ }
+
+ .product-card {
+  transition: all 0.3s ease-in-out;
+ }
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+ }
+
+.product-title {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+ }
+
+
+/* responsive */
+@media (max-width: 576px) {
+  .card-img-top {
+    height: 140px !important;
+  }
+ }
+
+ @media (max-width: 767.98px) {
+  .left {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .left h5 {
+    font-size: 16px;
+    margin-left: 1rem !important;
+  }
+
+  .left p {
+    margin-left: 1rem !important;
+    font-size: 14px;
+  }
+
+  .left input[type="number"] {
+    width: 100% !important;
+  }
+
+  .left .d-flex.flex-sm-row {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+  .left .start2 img {
+    width: 100% !important;
+    height: auto;
+  }
+}
+
+/*  */
+@media (max-width: 767.98px) {
+  .left {
+    margin-top: 180px !important; /* علشان ينزل لتحت */
+    z-index: auto;
+    position: static; /* يرجّع الوضع الطبيعي */
+  }
+
+  .section-above, .main-content-above {
+    margin-bottom: 20px !important; /* يفصل اللي فوقه عن اللي بعده */
+  }
+}
