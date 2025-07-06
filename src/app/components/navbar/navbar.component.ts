@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import {  RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -9,19 +9,8 @@ import { RouterLink } from '@angular/router';
 })
 export class NavbarComponent {
 
-  constructor(private _route:Router){}
+  constructor(){}
 
 
-  navigatehome(){
-    this._route.navigate(["./home"])
-  }
-  navigateshop(){
-    this._route.navigate(["./shop"])
-  }
-  navigateblog(){
-    this._route.navigate(["./blog"])
-  }
-  navigatecontact(){
-    this._route.navigate(["./contact"])
-  }
+ 
 }

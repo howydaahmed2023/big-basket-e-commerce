@@ -4,6 +4,10 @@
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 1050;
 }
+.basket:hover {
+  background-color: var(--main-color);
+  color: white!important;
+}
 
 .product-modal {
   position: fixed;
@@ -30,5 +34,5 @@
 }
 
 .basket{
-  background-color: var(--main-color);
+  background-color: red;
 }
