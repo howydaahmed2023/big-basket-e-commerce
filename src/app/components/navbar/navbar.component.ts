@@ -9,4 +9,19 @@ import { RouterLink } from '@angular/router';
 })
 export class NavbarComponent {
 
+  constructor(private _route:Router){}
+
+
+  navigatehome(){
+    this._route.navigate(["./home"])
+  }
+  navigateshop(){
+    this._route.navigate(["./shop"])
+  }
+  navigateblog(){
+    this._route.navigate(["./blog"])
+  }
+  navigatecontact(){
+    this._route.navigate(["./contact"])
+  }
 }
