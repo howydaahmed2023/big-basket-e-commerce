@@ -5,28 +5,23 @@
       align-items: flex-start !important;
       gap: 10px;
     }
-
     .container-fluid > div {
       width: 100% !important;
       margin-bottom: 10px;
     }
-
     .form-select {
       width: 100% !important;
     }
   }
-
   @media (max-width: 575.98px) {
     .container-fluid {
       padding-left: 1rem;
       padding-right: 1rem;
     }
-
     .container-fluid > div span,
     .container-fluid > div a {
       font-size: 13px !important;
     }
-
     .form-select {
       font-size: 13px !important;
       padding: 4px 6px;
@@ -41,34 +36,29 @@
       gap: 15px;
       height: auto !important;
     }
-
     /* الجزء اللي فيه اللوجو */
     header .container > .d-flex.align-items-center {
       flex-direction: column;
       align-items: flex-start;
       gap: 10px;
     }
-
     /*  البحث */
     .flex-grow-1.mx-4 {
       width: 100% !important;
       margin: 10px 0 !important;
     }
-
     /*أيقونات ة */
     header .container > .d-flex.gap-3 {
       justify-content: flex-start !important;
       width: 100% !important;
       gap: 15px;
     }
-
     /*  التنقل */
     nav .container {
       flex-direction: column !important;
       align-items: flex-start !important;
       gap: 10px;
     }
-
     nav .nav {
       flex-wrap: wrap;
       gap: 8px;
@@ -83,7 +73,6 @@
       text-align: start;
     }
   }
-
   @media (max-width: 575.98px) {
     /* تظبيط الموبايل */
     input.form-control {
