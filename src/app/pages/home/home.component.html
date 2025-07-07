@@ -6,7 +6,7 @@
         <div class="card-body">
           <h5 class="card-title">{{ product.title }}</h5>
           <p class="card-text text-danger">${{ product.priceAfterDiscount || product.price }}</p>
-          <button class="btn basket text-white mt-2" (click)="addToCart(product)"> Add To Cart</button>      
+          <button class="btn basket text-white mt-2" (click)="addToCart(product)"> Add To Cart</button>
           </div>
       </div>
     </div>
@@ -79,12 +79,12 @@
       <!-- Description with Read More -->
       <div class="mb-3">
         <p>
-          {{ selectedProduct?.description
+          {{ selectedProduct.description
             ? (showFullDescription
                 ? selectedProduct.description
                 : (selectedProduct.description | slice: 0:200) + '...')
             : '' }}
-          
+
           <button class="btn btn-link btn-sm p-0" (click)="toggleDescription()">
             {{ showFullDescription ? 'Read less' : 'Read more' }}
           </button>
