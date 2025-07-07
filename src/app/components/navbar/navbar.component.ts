@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import {  RouterLink } from '@angular/router';
 
 
 @Component({
@@ -9,5 +9,9 @@ import { RouterLink } from '@angular/router';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
+
+  constructor(){}
+
+
 
 }

@@ -1,7 +1,13 @@
 
-
+.margin{
+  margin-bottom: 45rem;
+}
 
 /* section 2 */
+
+.bg{
+  background-color:#dddde2 ;
+}
  .height2{
    height: 48vh;
  }
