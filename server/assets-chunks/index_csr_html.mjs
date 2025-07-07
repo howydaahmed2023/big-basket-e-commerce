@@ -1,9 +1,9 @@
-<!doctype html>
+export default `<!doctype html>
 <html lang="en" data-beasties-container="">
 <head>
   <meta charset="utf-8">
   <title>BigBasketECommerce</title>
-  <base href="https://howydaahmed2023.github.io/big-basket-e-commerce/">
+  <base href="https://howydaahmed2023.github.io">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -14,3 +14,4 @@
   <app-root></app-root>
 <script src="polyfills-B6TNHZQ6.js" type="module"></script><script src="scripts-AYGRPO7R.js" defer=""></script><script src="main-GZZDYFE5.js" type="module"></script></body>
 </html>
+`;
