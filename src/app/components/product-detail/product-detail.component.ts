@@ -4,12 +4,12 @@ import { ProductsService } from '../../service/products.service';
 import { ActivatedRoute, ParamMap, Router } from '@angular/router';
 
 @Component({
-  selector: 'app-product-details',
+  selector: 'app-product-detail',
   imports: [],
-  templateUrl: './product-details.component.html',
-  styleUrl: './product-details.component.css',
+  templateUrl: './product-detail.component.html',
+  styleUrl: './product-detail.component.css'
 })
-export class ProductDetailsComponent implements OnInit {
+export class ProductDetailComponent implements OnInit {
   product: any | allProducts[];
   productsSrv = inject(ProductsService);
   activatedRoute = inject(ActivatedRoute);

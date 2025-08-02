@@ -1,3 +1,22 @@
+
+
+.home-container3 .count-down a{
+  color: #FFFFFF;
+background-color: #ED174A;
+font-weight: 600;
+font-size: 24px;
+letter-spacing: -0.1px;
+border-radius: 7px;
+margin-right: 12px;
+padding: 14px 19px 15px 19px;
+
+
+
+
+
+
+}
+
 .modal-backdrop {
   position: fixed;
   inset: 0;
@@ -36,3 +55,81 @@
 .basket{
   background-color: red;
 }
+@media only screen and (max-width: 575px) {
+
+  .card{
+    margin-bottom: 15px;
+  }
+.home-container2 .card h1{
+font-size: 20px;
+
+}
+.home-container2 .card-img-overlay div{
+  margin-top: -15px;
+  font-size: 10px;
+}
+.home-container7 .card-img-overlay{
+  padding-top: 8px;
+}
+.home-container7 .card-img-overlay a{
+  font-size: smaller;
+  padding: 5px 8px ;
+}
+
+.home-container4 .card .card-img-overlay{
+  padding-top: 45px;
+}
+.textfree{
+display: none;
+}
+.product{
+  
+width:49%;
+
+  margin-top: 15px;
+}
+
+
+}
+@media only screen and (max-width: 427px){
+.product .border{
+
+  width:30%
+}
+}
+
+@media only screen and (min-width: 575px)  {
+.card{
+  margin-bottom: 15px;
+}
+
+.home-container2 .card-img-overlay h1,.home-container2 .card-img-overlay div:nth-child(2){
+font-size: 20px;
+}
+
+.home-container4 .card .card-img-overlay h3{
+  font-size:18px ;
+}
+.home-container4 .card .card-img-overlay a{
+  font-size: 12px;
+  padding: 4px 5px 4px 5px;
+}
+
+.home-container7 .card-img-overlay a{
+  font-size: smaller;
+  padding: 5px 8px ;
+  margin-top: 0;
+}
+.product{
+  width:25%
+}
+
+}
+
+
+@media only screen and (min-width: 1110px) {
+  .product{
+    width:19.5%
+  }
+}
+

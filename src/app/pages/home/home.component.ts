@@ -1,16 +1,21 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ProductsService } from '../../service/products.service';
-import { Product, Products } from '../../interface/products';
+import { allProducts, Brand, Category, Product, Products } from '../../interface/products';
 import { CommonModule } from '@angular/common';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
+import { CategoryListComponent } from "../../components/category-list/category-list.component";
 @Component({
   selector: 'app-home',
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink, CategoryListComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
 export class HomeComponent implements OnInit {
-  products: Product[] = [];
+  products:Product[] = [];
+  allProducts:allProducts[]=[]
+  brands:Brand[]=[];
+  categories:Category[]=[]
+  categoryId: number | null = null;
   selectedProduct: Product | null = null;
   mainImage: string = '';
   selectedSize: string = 'medium';
@@ -21,16 +26,29 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.getProducts();
+    this.loadProducts()
+
+
   }
 
   getProducts(): void {
     this.productService.getAllProducts().subscribe({
       next: (res) => {
         this.products = res.data;
+        console.log(this.products)
+
       },
       error: (err) => console.error('Error fetching products:', err)
     });
   }
+loadProducts(){
+  this.productService.getProducts().subscribe((res:any)=>{
+this.allProducts = res as allProducts[]
+
+  })
+}
+
+  
 
   openProduct(product: Product): void {
       this.selectedProduct = product;

@@ -1,0 +1,118 @@
+<div class="container home-container6 mb-4">
+  <div class="row d-flex flex-row justify-content-between fruit-container">
+    <div class="col-md-5">
+      <h5 class="Dosis-font fw-semibold text-theme1 mb-0">
+        FRUIT & VEGETABLES
+      </h5>
+      <span class="text-theme5"
+        >The freshest greengrocer products are waiting for you</span
+      >
+    </div>
+    <div class="col-md-2 viewall">
+      <span
+        class="fw-medium text-theme5 rounded-pill px-3 py-2"
+        style="border: 1px solid #d9d9e9"
+        >View All <img src="icons/home-vector2.png" alt=""
+      /></span>
+    </div>
+  </div>
+  <div class="row mt-lg-4">
+    <div class="col-lg-5 d-flex justify-content-between">
+      <ul class="list-unstyled listcat">
+        @for(item of categories; track $index){
+        <li (click)="onCategoryClick(item.id)">{{ item.name }}</li>
+        }
+      </ul>
+
+      <div class="card bacolacard">
+        <img
+          src="images/bacola-banner-17.png"
+          class="card-img img-fluid"
+          alt="..."
+        />
+        <div class="card-img-overlay">
+          <p class="card-text home-text-theme">delicious</p>
+          <h4 class="fw-lighter text-theme1">all products</h4>
+          <h4 class="fw-semibold text-theme1" style="color: #3e445a">
+            The freshest of
+          </h4>
+
+          <p class="Dosis-font fw-semibold text-uppercase text-theme5">
+            Just in Bacola
+          </p>
+        </div>
+      </div>
+    </div>
+    @if(show){
+    <div class="col-lg-6 text-uppercase text-center text-success">
+      enjoy our categories
+    </div>
+    }@else {
+    <div class="col-lg-6">
+      <div class="row">
+        @for(item of allProducts ; track $index){
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img
+              src="{{ item.images }}"
+              class="card-img-top"
+              [alt]="item.title"
+              width="173px"
+              height="155px"
+            />
+            <div class="card-body">
+              <h6 class="fw-medium text-theme1" style="font-size: 14px">
+                {{ item.title }}
+              </h6>
+              <small
+                class="Dosis-font fw-semibold text-uppercase"
+                style="color: #00b853; margin-top: 19.5px"
+                >In stock</small
+              >
+
+              <div>
+                <span
+                  ><img
+                    src="icons/vector-star.png"
+                    alt=""
+                    class="text-warning pe-1"
+                  />
+                  <img
+                    src="icons/vector-star.png"
+                    alt=""
+                    class="text-warning pe-1"
+                  />
+                  <img
+                    src="icons/vector-star.png"
+                    alt=""
+                    class="text-warning pe-1"
+                  />
+                  <img
+                    src="icons/vector-star.png"
+                    alt=""
+                    class="text-warning pe-1"
+                  />
+                  <img
+                    src="icons/vector-star.png"
+                    alt=""
+                    class="text-warning pe-1"
+                  />
+                </span>
+                <span
+                  class="Dosis-font fw-semibold text-theme8 ms-2"
+                  style="font-size: 13px"
+                  >1 review</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        }
+      </div>
+    </div>
+    }
+  </div>
+
+  <div></div>
+</div>

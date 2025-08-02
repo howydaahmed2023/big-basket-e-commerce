@@ -1,4 +1,32 @@
 
+
+.nav-categories{
+  border-radius: 50px;
+  font-size: 15px;
+}
+.nav-totalProducts{
+
+width: fit-content;
+left:50px;
+  font-size: 10px;
+  color: #71778E;
+  background: #EDEEF5;
+  border: 1px solid #FFFFFF;
+
+
+
+}
+.nav-link{
+  color: #3E445A;
+  font-size: 15px;
+  width:90px
+
+}
+.nav-link:hover,
+.nav-link.active{
+  color:var(--main-color)
+}
+
  @media (max-width: 991.98px) {
     .container-fluid {
       flex-direction: column !important;
@@ -15,8 +43,12 @@
   }
   @media (max-width: 575.98px) {
     .container-fluid {
+
       padding-left: 1rem;
       padding-right: 1rem;
+      padding-top: 10px;
+      padding-bottom: 5px;
+      margin-bottom: 1px;
     }
     .container-fluid > div span,
     .container-fluid > div a {
@@ -26,56 +58,15 @@
       font-size: 13px !important;
       padding: 4px 6px;
     }
-  }
 
-  @media (max-width: 991.98px) {
-    /* الهيدر الرئيسي */
-    header .container {
-      flex-direction: column !important;
-      align-items: flex-start !important;
-      gap: 15px;
-      height: auto !important;
-    }
-    /* الجزء اللي فيه اللوجو */
-    header .container > .d-flex.align-items-center {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 10px;
-    }
-    /*  البحث */
-    .flex-grow-1.mx-4 {
-      width: 100% !important;
-      margin: 10px 0 !important;
-    }
-    /*أيقونات ة */
-    header .container > .d-flex.gap-3 {
-      justify-content: flex-start !important;
-      width: 100% !important;
-      gap: 15px;
-    }
-    /*  التنقل */
-    nav .container {
-      flex-direction: column !important;
-      align-items: flex-start !important;
-      gap: 10px;
-    }
-    nav .nav {
-      flex-wrap: wrap;
-      gap: 8px;
-    }
 
-    nav .dropdown {
-      width: 100%;
-    }
 
-    nav .dropdown-toggle {
-      width: 100%;
-      text-align: start;
+
+
+
+
     }
-  }
-  @media (max-width: 575.98px) {
-    /* تظبيط الموبايل */
-    input.form-control {
+     input.form-control {
       height: 50px !important;
       font-size: 12px !important;
     }
@@ -88,5 +79,71 @@
     header small {
       font-size: 13px !important;
     }
+
+
+
+  @media (max-width: 991.98px) {
+    /* الهيدر الرئيسي */
+    header .container {
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      gap: 15px;
+      height: auto !important;
+    }
+      .container img,.container h6,.container p{
+display:none;
+
+    }
+    /* الجزء اللي فيه اللوجو */
+    header .container > .d-flex.align-items-center {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    .container .logo img{
+      display: inline-block;
+    }
+    /*  البحث */
+    .flex-grow-1.mx-4 {
+      width: 100% !important;
+      margin: 10px 0 !important;
+    }
+    .container input{
+      width:400px
+    }
+
+      .container .icons a,.container .icons span{
+      display:none
+    }
+    /*أيقونات ة */
+    header .container > .d-flex.gap-3 {
+      justify-content: flex-start !important;
+      width: 100% !important;
+      gap: 15px;
+    }
+    /*  التنقل */
+
+      .navbar .container{
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+
+
+.nav-categories{
+      display: none;
+    }
+    nav .dropdown-toggle {
+      width: 100%;
+      text-align: start;
+    }
+  }
+  @media (min-width: 991.98px) {
+.container .logo img{
+      display: none;
+    }
+
 }
-/*  */
+

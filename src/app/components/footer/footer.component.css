@@ -41,6 +41,17 @@ ul li a{
  border: 1px solid #E4E5EE;
  padding: 5.75px 9.5px ;
  justify-content: center;
-  
+
 }
 
+@media only screen and (max-width: 575px){
+  .container-fluid img{
+    display: none;
+  }
+
+
+
+  .container-list div{
+    width:49%
+  }
+}

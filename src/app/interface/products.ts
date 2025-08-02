@@ -7,6 +7,7 @@ export interface Product {
   title: string
   slug: string
   description: string
+  count:number
   quantity: number
   price: number
   priceAfterDiscount: number
@@ -24,6 +25,17 @@ export interface Products {
   limit: number
   page: number
   totalPages: number
+}
+export interface allProducts {
+  id: number
+  title: string
+  slug: string
+  price: number
+  description: string
+  category: Category
+  images: string[]
+  creationAt: string
+  updatedAt: string
 }
 
 export interface Subcategory {
@@ -46,3 +58,12 @@ export interface Brand {
   slug: string
   image: string
 }
+export interface Categories {
+  id: number
+  name: string
+  slug: string
+  image: string
+  creationAt: string
+  updatedAt: string
+}
+

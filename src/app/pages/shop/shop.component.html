@@ -6,27 +6,28 @@
   <div class="container">
     <div class="row">
       <!-- Sidebar -->
-      <div class="col-lg-3 col-md-4 col-sm-12 mb-4">
+      <div class="col-lg-3 col-md-4 col-sm-12 mb-4 ">
         <h5 class="font">Product Categories</h5>
-        <p class="nav-link py-1 cursor-pointer mb-1"><input type="checkbox" class="me-2">Beverages</p>
-        <p class="nav-link cursor-pointer mb-1"><input type="checkbox" class="me-2">Biscuits & Snacks</p>
-        <p class="nav-link cursor-pointer mb-1"><input type="checkbox" class="me-2">Breads & Bakery</p>
-        <p class="nav-link cursor-pointer mb-1"><input type="checkbox" class="me-2">Breakfast & Dairy</p>
-        <p class="nav-link cursor-pointer mb-2"><input type="checkbox" class="me-2">Frozen Foods</p>
-        <p class="nav-link cursor-pointer mb-2"><input type="checkbox" class="me-2">Fruits & Vegetables</p>
-        <p class="nav-link cursor-pointer mb-2"><input type="checkbox" class="me-2">Grocery & Staples</p>
-        <p class="nav-link cursor-pointer mb-2"><input type="checkbox" class="me-2">Household Needs</p>
-        <p class="nav-link cursor-pointer mb-1"><input type="checkbox" class="me-2">Meats & Seafood</p>
+        <p class="nav-link py-1 cursor-pointer mb-1 text-theme8"><input type="checkbox" class="me-2">Beverages</p>
+        <p class="nav-link cursor-pointer mb-1 text-theme8 "><input type="checkbox" class="me-2">Biscuits & Snacks</p>
+        <p class="nav-link cursor-pointer mb-1 text-theme8 "><input type="checkbox" class="me-2">Biscuits & Snacks</p>
+        <p class="nav-link cursor-pointer mb-1 text-theme8"><input type="checkbox" class="me-2">Breads & Bakery</p>
+        <p class="nav-link cursor-pointer mb-1 text-theme8"><input type="checkbox" class="me-2">Breakfast & Dairy</p>
+        <p class="nav-link cursor-pointer mb-2 text-theme8"><input type="checkbox" class="me-2">Frozen Foods</p>
+        <p class="nav-link cursor-pointer mb-2 text-theme8"><input type="checkbox" class="me-2">Fruits & Vegetables</p>
+        <p class="nav-link cursor-pointer mb-2 text-theme8"><input type="checkbox" class="me-2">Grocery & Staples</p>
+        <p class="nav-link cursor-pointer mb-2 text-theme8"><input type="checkbox" class="me-2">Household Needs</p>
+        <p class="nav-link cursor-pointer mb-1 text-theme8 mb-5"><input type="checkbox" class="me-2">Meats & Seafood</p>
       </div>
 
       <!-- Content -->
-      <div class="col-lg-9 col-md-8 col-sm-12">
+      <div class="col-lg-9 col-md-8 col-sm-12 ">
         <img src="assets/0575b3317d296c5fd9dc55d8a26d061ea81e512a (1).png"  class="img-fluid width  rounded-4 mb-3">
         <div class="bg p-2 d-flex align-items-center flex-wrap mx-auto ms-0 rounded-2" style="max-width: 930px;">
           <p class="mb-0">62 products</p>
           <p class="mb-0 ms-auto">Sort by: <b>Alphabetically, A-Z</b></p>
         </div>
-        
+
       </div>
     </div>
   </div>
@@ -36,7 +37,7 @@
   <!-- section 3 -->
   <section class="height ">
     <div class=" d-flex flex-column flex-lg-row justify-content-between gap-0 p-0 m-0">
-      
+
       <!-- الفلاتر الجانبية -->
       <div class="col-12 col-sm-6 col-lg-3 mt-4 left ">
         <h5 class="ms-4 font">Brands</h5>
@@ -55,24 +56,24 @@
         <p class="nav-link cursor-pointer ms-4 mb-1">
           <input type="checkbox" class="me-3">Oreo <b class="text ms-3">(16)</b>
         </p>
-      
+
         <h5 class="ms-4 mt-5 font">Price</h5>
         <div class="container-fluid d-flex flex-column flex-sm-row gap-3 align-items-start align-items-sm-end mt-2 ms-3 px-0">
           <div style="max-width: 100px;">
             <label for="from" class="form-label mb-1 small">From</label>
             <input type="number" id="from" class="form-control form-control-sm" placeholder="0">
           </div>
-      
+
           <div class="fw-bold d-flex justify-content-center align-items-center" style="min-width: 20px; height: 32px;">
             --
           </div>
-      
+
           <div style="max-width: 90px;">
             <label for="to" class="form-label mb-1 small">To</label>
             <input type="number" id="to" class="form-control form-control-sm" placeholder="65.00">
           </div>
         </div>
-      
+
         <div class="mt-5">
           <h5 class="ms-4 font">Availability</h5>
           <p class="nav-link cursor-pointer ms-4 mb-1">
@@ -82,74 +83,69 @@
             <input type="checkbox" class="me-3">Out of stock <b class="text right">(36)</b>
           </p>
         </div>
-      
+
         <div class="start2 ms-3 h-75">
           <img src="assets/aeb9763b1145b3dd6e2fadd6c2b27941d3d7b0fa.png" class="img-fluid-75   img1 rounded-3" alt="image">
         </div>
       </div>
-      
-      
-  
+
+
+
       <!-- المنتجات -->
       <div class=" start mt-3 position-relative right:10px;" style="max-width: 1000px;">
         <div class="row g-3">
           <div class="col-lg-3 col-md-4 col-sm-6"  *ngFor="let product of products.slice(0, 12)">
             <div class="card  shadow-sm position-relative d-flex flex-column justify-content-between product-card rounded-4">
-      
+
               <!-- الخصم -->
-              <div class="position-absolute top-0 end-0 bg-success text-white px-3 py-1 small rounded-3" >
+              <div class="position-absolute top-0 start-0 bg-main-color Dosis-font text-white fw-semibold px-3 py-1 small rounded-3" >
                 4%
               </div>
-      
+
               <!-- صورة -->
-              <img [src]="product.imageCover" class="card-img-top p-3" alt="Product image"
-                   style="height: 180px; object-fit: contain;">
-      
+              <img [src]="product.imageCover" class="card-img-top p-3 img-fluid" alt="Product image"
+                   style="height: 180px; ">
+
               <div class="card-body d-flex flex-column">
-      
+
                 <!-- العنوان -->
-                <h6 class="card-title fw-semibold mb-1 text-truncate product-title">{{ product.title }}</h6>
-      
+                <h6 class="card-title fw-semibold mb-1 text-truncate product-title text-theme1 fw-medium">{{ product.title }}</h6>
+
                 <!--  -->
-                <p class="text-uppercase small text-success fw-bold mb-2">In stock</p>
-      
+                <p class="text-uppercase small text-success fw-semibold Dosis-font">In stock</p>
+
                 <!-- النجوم -->
                 <p class="small mb-2">
-                  <span class="bord">⭐️⭐️⭐️⭐️⭐️</span>
-                  <span class="text-muted ms-2">1 review</span>
+                  <span class="bord">⭐️⭐️⭐️⭐️</span>
+                  <span class="text-theme8 ms-2 Dosis-font fw-semibold" style="font-size: 13px;">1 review</span>
                 </p>
-      
+
                 <!-- السعر -->
-                <div class="mb-3">
-                  <span  class="text-muted text-decoration-line-through me-2"></span>
-                  <span class="text-danger fw-bold"> ${{ product.price }}</span>
+                <div class="mb-3 Dosis-font fw-semibold">
+<del class="me-2 " style="color:#C2C2D3;font-size: 15.3px;">$4.49</del>
+
+
+                  <span class="" style="font-size: 18px;color: #D51243;"> ${{ product.price }}</span>
                 </div>
-      
+
                 <!-- الكمية  -->
-                <div class="input-group mt-auto justify-content-center flex-column align-items-center" style="max-width: 200px;">
-                  <div class="d-flex justify-content-between w-100">
-                    <button class="btn btn-outline-secondary rounded-4 px-3" (click)="decrease(product)">−</button>
-                    <input type="text" class="form-control text-center border rounded-3 mx-2" [value]="product.count" readonly style="width: 60px;">
-                    <button class="btn btn-warning text-white rounded-4 px-3" (click)="increase(product)">+</button>
+
+                  <div class="">
+                    <button class="btn  rounded-4 p-2 rounded-start-pill" style="background-color: #EDEEF5;" (click)="decrease(product)">−</button>
+                    <input type="text" class="form-control text-center border rounded-3 mx-2 d-inline-block" [value]="product.count" readonly style="width: 60px;">
+                    <button class="btn btn-warning text-white rounded-4 p-2 rounded-end-pill" (click)="increase(product)">+</button>
                   </div>
-      
-                  <!-- الزر الرئيسي -->
-                  <button
-                  class="btn mt-2 w-100"
-                  (click)="toggleCart(product)"
-                  [ngClass]="product.addtocart ? 'btn-success' : 'btn-danger'">
-                  {{ product.addtocart ? 'Added ✅' : 'Add To Cart 🛒' }}
-                </button>
-                
-                </div>
-      
+
+                 
+
               </div>
             </div>
+
           </div>
         </div>
-      </div>    
-      
-  
+      </div>
+
+
     </div>
     <p class="text-center mt-4 fs-6 ">
       <!-- <i class="bi bi-chevron-left mx-2 cursor-pointer"></i> -->
@@ -162,6 +158,6 @@
       <i class="bi bi-chevron-right mx-2 cursor-pointer"></i>
     </p>
       </section>
-  
-  
+
+
     </section>

@@ -10,6 +10,7 @@
   --bg2-color:#FFFFFF;
   --bg3-color:#F5F5F5;
   --bg4-color:#F3F3F6;
+  --bg5-color:#FFEEF2;
   --text1-color:#202435;
   --text2-color:#000000;
   --text3-color:#707070;
@@ -18,6 +19,9 @@
   --text6-color:#595959;
   --text7-color:#D51243;
  --text8-color:#71778E;
+ --text9-color:#038E42;
+
+ --home-text-color:#ED174A;
 
 body{
 font-family: "Inter", sans-serif;
@@ -60,6 +64,27 @@ font-family: "Inter", sans-serif;
 }
 .text-theme5{
   color: var(--text5-color);
+}
+.text-theme8{
+  color:var(--text8-color)
+}
+.text-theme9{
+  color:var(--text9-color)
+}
+.home-text-theme{
+  color: var(--home-text-color);
+}
+.text-theme7{
+  color: var(--text7-color);
+}
+.bg-home-theme{
+  background-color: var(--home-text-color);
+}
+.bg-theme5{
+  background-color: var(--bg5-color);
+}
+a{
+  text-decoration: none;
 }
 
 

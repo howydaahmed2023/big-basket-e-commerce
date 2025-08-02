@@ -1,0 +1,22 @@
+.col-lg-8{
+  padding-bottom:116px ;
+}
+.col-lg-3 article{
+margin-bottom: 36px;
+}
+.col-lg-3 ul li{
+  border-radius: 4px;
+  padding: 9.75px 16px 9.75px 16px;
+  margin-bottom: 3px;
+}
+.col-lg-3 .list{
+
+}
+.col-lg-3 .list li{
+  padding: 6px 11px 6px 11px;
+  color: #000000;
+  font-size: 14px;
+  border: 1px solid #EDEEF5;
+    display: inline-block;
+    margin-right: 5.5px;
+}

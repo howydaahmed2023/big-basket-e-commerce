@@ -1,16 +1,459 @@
-<div class="container py-4">
+<!-- start section1 -->
+<section class="container py-4 bg-theme5">
   <div class="row">
-    <div class="col-md-3 mb-3" *ngFor="let product of products">
-      <div class="card h-100" (click)="openProduct(product)" style="cursor: pointer;">
-        <img [src]="product.imageCover" class="card-img-top" alt="product" />
-        <div class="card-body">
-          <h5 class="card-title">{{ product.title }}</h5>
-          <p class="card-text text-danger">${{ product.priceAfterDiscount || product.price }}</p>
-          <button class="btn basket text-white mt-2" (click)="addToCart(product)"> Add To Cart</button>
+    <div
+      class="col-md-8 mx-auto d-flex home-text-theme header1"
+      style="padding-top: 20px"
+    >
+      <p class="pt-2">
+        Super discount for your
+        <span class="fw-semibold text-decoration-underline"
+          >first purchase.</span
+        >
+      </p>
+      <p
+        class="Dosis-font text-uppercase fw-semibold px-4 rounded-pill textfree"
+        style="
+          border: 1px dashed #ff6048;
+          margin-left: 14.69px;
+          margin-right: 15px;
+        "
+      >
+        FREE25BAC
+      </p>
+      <p class="text-theme5 pt-2">Use discount code in checkout!</p>
+    </div>
+  </div>
+</section>
+<!-- end section1 -->
+<!-- start section2 -->
+<section class="container mb-4 home-container2">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <img
+          class="card-img img-fluid"
+          src="images/home-banner-17.png"
+          alt="Card image"
+        />
+        <div
+          class="card-img-overlay py-md-2 ps-lg-5 py-lg-5 fw-semibold text-theme1"
+        >
+          <span class="text-uppercase Dosis-font">Exclusive Offer</span>
+          <span
+            class="Dosis-font text-uppercase text-theme9 ms-3 rounded-pill py-lg-1 px-lg-3"
+            style="
+              font-size: 14px;
+              background: linear-gradient(
+                90deg,
+                rgba(0, 184, 83, 0.2) 0%,
+                rgba(32, 55, 88, 0) 100%
+              );
+            "
+            >-20% Off</span
+          >
+          <h1 class="card-title mb-0">
+            Gerthesim Tend <br />
+            Inder Prosur
+          </h1>
+          <p class="card-text">Only this week. Don’t miss...</p>
+          <div class="">
+            <span>from</span>
+            <span
+              class="text-theme7 fw-semibold Dosis-font ms-2"
+              style="font-size: 36px"
+              >$7.99</span
+            >
           </div>
+
+          <a
+            href="#"
+            class="btn bg-home-theme text-theme2 fw-medium rounded-pill py-2 px-lg-4 mt-lg-4"
+            style="border: 1px solid #ed174a"
+            >Shop Now
+            <img src="icons/home-vector.png" class="ms-2" alt="shop-icon"
+          /></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <img
+          class="card-img img-fluid"
+          src="images/home-banner-18.png"
+          alt="Card image"
+        />
+        <div
+          class="card-img-overlay py-md-2 ps-lg-5 py-lg-5 fw-semibold text-theme2"
+        >
+          <span class="text-uppercase Dosis-font">Exclusive Offer</span>
+          <span
+            class="Dosis-font text-uppercase text-theme9 ms-3 rounded-pill py-lg-1 px-lg-3"
+            style="
+              font-size: 14px;
+              background: linear-gradient(
+                90deg,
+                rgba(0, 184, 83, 0.2) 0%,
+                rgba(32, 55, 88, 0) 100%
+              );
+            "
+            >-20% Off</span
+          >
+          <h1 class="card-title mb-0">
+            Gerthesim Tend <br />
+            Inder Prosur
+          </h1>
+          <p class="card-text">Only this week. Don’t miss...</p>
+          <div class="">
+            <span>from</span>
+            <span
+              class="text-theme7 fw-semibold Dosis-font ms-lg-2"
+              style="font-size: 36px"
+              >$6.45</span
+            >
+          </div>
+
+          <a
+            href="#"
+            class="btn bg-main-color text-theme2 fw-medium rounded-pill py-2 px-lg-4 mt-lg-4"
+            style="border: 1px solid #35afa0"
+            >Shop Now
+            <img src="icons/home-vector.png" class="ms-2" alt="shop-icon"
+          /></a>
+        </div>
       </div>
     </div>
   </div>
+</section>
+<!-- end section2 -->
+<!-- start section3 -->
+<section>
+  <div class="container home-container3">
+    <div class="row">
+      <div class="col-md-6 text-sm-start text-md-end">
+        <h3 class="fw-light mb-0" style="color: #35afa0">
+          Special Offers of the week!
+        </h3>
+        <p style="color: #9b9bb4">
+          Ut placerat, magna quis porttitor vulputate, magna nunc auctor ante.
+        </p>
+      </div>
+      <div class="col-md-6 Dosis-font count-down align-content-center">
+        <a href="">70</a>
+        <a href="">36</a>
+        <a href="">14</a>
+        <a href="">46</a>
+      </div>
+    </div>
+    <div
+      class="row justify-content-between"
+      style="border: 1px solid #edeef5; border-radius: 1px"
+    >
+      <div
+        class="mb-3 border product position-relative"
+        *ngFor="let product of products.slice(0, 10)"
+      >
+        <div
+          class="position-relative"
+          (click)="openProduct(product)"
+          style="cursor: pointer"
+        >
+          <img [src]="product.imageCover" class="img-fluid" alt="product" />
+
+          <small
+            class="position-absolute top-0 start-0 px-2 py-1 bg-main-color text-theme2 rounded-pill"
+            >20%</small
+          >
+
+          <div class="text-center">
+            <h6 class="text-theme1" style="font-size: 14px">
+              {{ product.title }}
+            </h6>
+            <small class="fw-500 d-block" style="color: #00b853"
+              >{{ product.quantity }} IN STOCK</small
+            >
+            <span
+              ><img
+                src="icons/vector-star.png"
+                alt=""
+                class="text-warning pe-1"
+              />
+              <img
+                src="icons/vector-star.png"
+                alt=""
+                class="text-warning pe-1"
+              />
+              <img
+                src="icons/vector-star.png"
+                alt=""
+                class="text-warning pe-1"
+              />
+              <img
+                src="icons/vector-star.png"
+                alt=""
+                class="text-warning pe-1"
+              />
+              <img
+                src="icons/vector-star.png"
+                alt=""
+                class="text-warning pe-1"
+              />
+            </span>
+            <span
+              class="Dosis-font fw-semibold text-theme8 ms-2"
+              style="font-size: 13px"
+              >1 review</span
+            >
+            <p class="text-danger">
+              ${{ product.priceAfterDiscount || product.price }}
+            </p>
+            <button class="btn basket text-white" (click)="addToCart(product)">
+              Add To Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- end section3 -->
+
+<!-- start section 4 -->
+<div class="container mb-4 home-container4">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <img
+          class="card-img img-fluid"
+          src="images/home-banner-19.png"
+          alt="Card image"
+        />
+        <div
+          class="card-img-overlay py-md-2 ps-md-3 ps-lg-4 pt-sm-4 py-lg-5 fw-semibold text-theme1"
+        >
+          <h3 class="card-title">
+            Organic
+            <br />
+            Breakfast
+          </h3>
+          <p
+            class="card-text fw-normal home-text-theme"
+            style="font-size: 12px"
+          >
+            Bacola Weekend Discount
+          </p>
+
+          <a
+            href="#"
+            class="btn bg-home-theme text-theme2 fw-medium rounded-pill py-2 px-4 mt-lg-1"
+            style="border: 1px solid #ff6048; background-color: #ff6048"
+            >Shop Now
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img
+          class="card-img img-fluid"
+          src="images/home-banner-20.png"
+          alt="Card image"
+        />
+        <div
+          class="card-img-overlay py-md-2 ps-md-3 ps-lg-4 pt-sm-4 py-lg-5 fw-semibold text-theme1"
+        >
+          <h3 class="card-title">
+            Organic
+            <br />
+            Baby Food
+          </h3>
+          <p
+            class="card-text fw-normal home-text-theme"
+            style="font-size: 12px"
+          >
+            Bacola Weekend Discount
+          </p>
+
+          <a
+            href="#"
+            class="btn bg-home-theme text-theme2 fw-medium rounded-pill py-2 px-4 mt-lg-1"
+            style="border: 1px solid #ff6048; background-color: #ff6048"
+            >Shop Now
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img
+          class="card-img img-fluid"
+          src="images/home-banner-21.png"
+          alt="Card image"
+        />
+        <div
+          class="card-img-overlay py-md-2 ps-md-3 ps-lg-4 pt-sm-4 py-lg-5 fw-semibold text-theme2"
+        >
+          <h3 class="card-title">
+            Organic
+            <br />
+            Breakfasts
+          </h3>
+          <p class="card-text fw-normal" style="font-size: 12px">
+            Bacola Weekend Discount
+          </p>
+
+          <a
+            href="#"
+            class="btn bg-home-theme text-theme2 fw-medium rounded-pill py-2 px-4 mt-lg-1"
+            style="background: #35afa0; border: 1px solid #35afa0"
+            >Shop Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- end section 4 -->
+<!-- start section 5 -->
+
+<app-category-list></app-category-list>
+<!-- end section 6 -->
+
+<!-- start section 7 -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card home-container7">
+        <img
+          class="card-img img-fluid"
+          src="images/home-banner-22.png"
+          alt="Card image"
+        />
+        <div class="card-img-overlay py-md-2 ps-lg-4 py-lg-5 fw-semibold">
+          <p class="Dosis-font mb-0" style="font-size: 14px; color: #ff6048">
+            Weekend Discount 40%
+          </p>
+          <h4 class="card-title mb-md-0" style="color: #3e445a">
+            Legumes & Cereals
+          </h4>
+
+          <p class="card-text fw-normal text-theme1" style="font-size: 12px">
+            Bacola Weekend Discount
+          </p>
+
+          <a
+            href="#"
+            class="btn bg-home-theme text-theme2 fw-medium rounded-pill py-lg-2 px-lg-4 mt-lg-1"
+            style="background: #35afa0; border: 1px solid #35afa0"
+          >
+            Shop Now
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card home-container7">
+        <img
+          class="card-img img-fluid"
+          src="images/home-banner-23.png"
+          alt="Card image"
+        />
+        <div
+          class="card-img-overlay py-md-2 ps-lg-4 py-lg-5 fw-semibold text-theme2"
+        >
+          <p class="Dosis-font mb-0">Weekend Discount 40%</p>
+          <h4 class="card-title mb-md-0">Legumes & Cereals</h4>
+
+          <p class="card-text fw-normal" style="font-size: 12px">
+            Bacola Weekend Discount
+          </p>
+
+          <a
+            href="#"
+            class="btn bg-home-theme text-theme2 fw-medium rounded-pill py-lg-2 px-lg-4 mt-lg-1 bg-home-theme"
+            style="border: 1px solid #ed174a"
+          >
+            Shop Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end section 5 -->
+<!-- start section 6 -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <img
+          src="images/blog-3.png"
+          class="card-img-top"
+          alt="blog-img"
+          routerLink="/blog"
+        />
+        <div class="card-body fw-semibold">
+          <span class="Dosis-font text-uppercase" style="color: #9b9bb4"
+            >Grocery</span
+          >
+          <h5 class="card-title text-theme1">
+            But I must explain to you how all this mistaken idea
+          </h5>
+          <span class="fw-medium text-theme8">Jan 13 2025</span>
+          <span class="fw-medium text-theme1 ms-2">Sinan ISIK</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img
+          src="images/blog-5.png"
+          class="card-img-top"
+          alt="blog-img"
+          routerLink="/blog"
+        />
+        <div class="card-body fw-semibold">
+          <span class="Dosis-font text-uppercase" style="color: #9b9bb4"
+            >Grocery</span
+          >
+          <h5 class="card-title text-theme1">
+            The Problem With Typefaces on the Web
+          </h5>
+          <span class="fw-medium text-theme8">Jan 13 2025</span>
+          <span class="fw-medium text-theme1 ms-2">Sinan ISIK</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img
+          src="images/blog-1.png"
+          class="card-img-top"
+          alt="blog-img"
+          routerLink="/blog"
+        />
+        <div class="card-body fw-semibold">
+          <span class="Dosis-font text-uppercase" style="color: #9b9bb4"
+            >Grocery</span
+          >
+          <h5 class="card-title text-theme1">
+            English Breakfast Tea With Tasty Donut Desserts
+          </h5>
+          <span class="fw-medium text-theme8">Jan 13 2025</span>
+          <span class="fw-medium text-theme1 ms-2">Sinan ISIK</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- end section 6 -->
+
+<div class="container py-4">
+  <div class="row"></div>
 </div>
 <!-- Product Modal -->
 <div class="product-modal shadow-lg" *ngIf="selectedProduct">
@@ -24,13 +467,27 @@
             class="carousel-item"
             [class.active]="i === 0"
           >
-            <img [src]="img" class="d-block w-100 rounded" style="max-height: 400px; object-fit: contain;" />
+            <img
+              [src]="img"
+              class="d-block w-100 rounded"
+              style="max-height: 400px; object-fit: contain"
+            />
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#productCarousel"
+          data-bs-slide="prev"
+        >
           <span class="carousel-control-prev-icon"></span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#productCarousel"
+          data-bs-slide="next"
+        >
           <span class="carousel-control-next-icon"></span>
         </button>
       </div>
@@ -40,7 +497,7 @@
     <div class="col-md-6">
       <h3>{{ selectedProduct.title }}</h3>
       <!-- Price -->
-      <h4 class=" mb-3">
+      <h4 class="mb-3">
         ${{ selectedProduct.priceAfterDiscount || selectedProduct.price }}
       </h4>
 
@@ -63,30 +520,43 @@
       <div class="mb-3 d-flex align-items-center">
         <label class="me-2 fw-bold">Quantity:</label>
         <div class="btn-group">
-          <button class="btn btn-outline-secondary" (click)="decrease()">−</button>
+          <button class="btn btn-outline-secondary" (click)="decrease()">
+            −
+          </button>
           <span class="btn btn-light disabled">{{ quantity }}</span>
-          <button class="btn btn-outline-secondary" (click)="increase()">+</button>
+          <button class="btn btn-outline-secondary" (click)="increase()">
+            +
+          </button>
         </div>
       </div>
       <!-- Buttons -->
-      <button class="btn basket text-white w-100 mb-2" (click)="addToCart(selectedProduct)"> Add to Cart</button>
-      <button class="btn btn-outline-primary w-100" (click)="goToCheckout()">Proceed to Checkout</button>
-            <!-- Wishlist & Share -->
+      <button
+        class="btn basket text-white w-100 mb-2"
+        (click)="addToCart(selectedProduct)"
+      >
+        Add to Cart
+      </button>
+      <button class="btn btn-outline-primary w-100" (click)="goToCheckout()">
+        Proceed to Checkout
+      </button>
+      <!-- Wishlist & Share -->
       <div class="mb-3">
         <button class="btn btn-outline-secondary me-2">🤍 Wishlist</button>
-        <button class="btn btn-outline-secondary"> Share</button>
+        <button class="btn btn-outline-secondary">Share</button>
       </div>
       <!-- Description with Read More -->
       <div class="mb-3">
         <p>
-          {{ selectedProduct.description
-            ? (showFullDescription
+          {{
+            selectedProduct.description
+              ? showFullDescription
                 ? selectedProduct.description
-                : (selectedProduct.description | slice: 0:200) + '...')
-            : '' }}
+                : (selectedProduct.description | slice : 0 : 200) + "..."
+              : ""
+          }}
 
           <button class="btn btn-link btn-sm p-0" (click)="toggleDescription()">
-            {{ showFullDescription ? 'Read less' : 'Read more' }}
+            {{ showFullDescription ? "Read less" : "Read more" }}
           </button>
         </p>
       </div>
@@ -100,18 +570,27 @@
       <div
         *ngFor="let rel of relatedProducts"
         class="card me-3"
-        style="min-width: 150px; cursor: pointer;"
+        style="min-width: 150px; cursor: pointer"
         (click)="openProduct(rel)"
       >
-        <img [src]="rel.imageCover" class="card-img-top" style="height: 100px; object-fit: cover;" />
+        <img
+          [src]="rel.imageCover"
+          class="card-img-top"
+          style="height: 100px; object-fit: cover"
+        />
         <div class="card-body p-2">
           <h6 class="card-title mb-1">{{ rel.title }}</h6>
-          <p class="card-text small text-muted">${{ rel.priceAfterDiscount || rel.price }}</p>
+          <p class="card-text small text-muted">
+            ${{ rel.priceAfterDiscount || rel.price }}
+          </p>
         </div>
       </div>
     </div>
   </div>
 
   <!-- Close -->
-  <button class="btn-close position-absolute top-0 end-0 m-3" (click)="closeModal()"></button>
+  <button
+    class="btn-close position-absolute top-0 end-0 m-3"
+    (click)="closeModal()"
+  ></button>
 </div>

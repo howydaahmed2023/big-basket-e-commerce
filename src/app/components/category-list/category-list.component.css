@@ -1,0 +1,27 @@
+.home-container6 ul li{
+  color:#3E445A ;
+  font-size: 13px;
+  margin-top: 18px;
+
+}
+
+@media (max-width: 575px) {
+  .viewall{
+
+padding: 10px 0 10px 0;
+
+text-align: end;
+  }
+
+  .card{
+
+    margin-top: 10px;
+    width:100%
+  }
+  .products{
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+  }
+ }
+

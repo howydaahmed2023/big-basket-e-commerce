@@ -11,6 +11,7 @@ import { ProductsService } from '../../service/products.service';
 })
 export class ShopComponent implements OnInit {
 products:any[]=[]
+
   productSrv = inject(ProductsService)
 
 

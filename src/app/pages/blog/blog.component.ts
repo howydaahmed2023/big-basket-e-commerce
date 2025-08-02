@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './blog.component.css'
 })
 export class BlogComponent {
-
+pagination=[1,2,3]
 }
